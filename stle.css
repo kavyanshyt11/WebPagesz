@@ -1,0 +1,79 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: #222;
+}
+
+#box {
+  width: 1050px;
+  height: 1400px;
+  color: #fff;
+  background: #262626;
+  position: relative;
+  margin: 150px;
+  padding: 30px;
+  border-radius: 20px;
+}
+
+#box::after,
+#box::before {
+  content: "";
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  background: linear-gradient(45deg, #fb0094, #0000ff, #00ff00, #ffff00, #ff0000, #fb0094, #0000ff, #00ff00, #ffff00, #ff0000);
+  background-size: 400%;
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  z-index: -1;
+  animation: animated-shadow 10s linear infinite alternate;
+}
+
+#box::after {
+  filter: blur(30px);
+}
+#box1 {
+  width: 1000px;
+  height: 900px;
+  color: #fff;
+  background: #262626;
+  position: relative;
+  margin: 150px;
+  padding: 30px;
+  border-radius: 20px;
+}
+
+#box1::after,
+#box1::before {
+  content: "";
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  background: linear-gradient(45deg, #fb0094, #0000ff, #00ff00, #ffff00, #ff0000, #fb0094, #0000ff, #00ff00, #ffff00, #ff0000);
+  background-size: 400%;
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  z-index: -1;
+  animation: animated-shadow 10s linear infinite alternate;
+}
+
+#box1::after {
+  filter: blur(30px);
+}
+
+
+@keyframes animated-shadow {
+  0% {
+    background-position: 0 0;
+  }
+
+  50% {
+    background-position: 100% 0;
+  }
+
+  100% {
+    background-position: 0 0;
+  }
+}

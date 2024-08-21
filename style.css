@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gupter:wght@400;500;700&display=swap');
+
+
+.hrr{
+    height: 3px;
+    background-color: white;
+}
+
+.tech{
+    font-size: 20px;
+    font-family: "Playfair Display", serif;
+}
+
+h2{
+    font-size: 50px;
+   
+}
+
+p{     
+    font-size: 25px;
+    font-family: "Josefin Sans", sans-serif;
+}
+
+img{
+    border-radius: 15px;
+    border-style: solid;
+    border-color: linear-gradient(45deg, red, blue);
+    border-width: 4px;
+}
+
+.navbar {
+  background-image: linear-gradient(to left, rgb(0, 221, 255), rgb(55, 75, 255), blue);
+
+}
+
+.navbar ul{
+    list-style-type: none;
+
+    padding: 0px;
+    margin: 0px;
+    overflow: hidden;
+}
+
+.navdiv{
+  display: flex;
+  justify-content: space-between;
+    font-family: "Dancing Script", cursive;
+    font-size: 50px;
+}
+
+.navbar a{
+    color: white;
+    text-decoration: wavy;
+    padding: 15px;
+    display: block;
+    text-align: center;
+    font-family: "Pacifico", cursive;
+    font-size: 30px;
+    border-radius: 5px;
+}
+
+.navbar a:hover{
+    background-color: white;
+    color: black;
+}
+
+.navbar li{
+    display: inline-block;
+}
+
+body{
+    color: white;
+    background: #222;
+}
+
+.btn1 {
+    background-image: linear-gradient(to left, rgb(26, 255, 0), rgb(24, 147, 24));
+    color: white;
+    font-family: "Gupter", serif;
+    border-radius: 20px;
+    font-size: 27px;
+    border: none;
+}
+
+.btn1:hover {
+    background: rgb(15, 132, 15);
+}
+#box2 {
+    width: 1050px;
+    height: 1400px;
+    color: #fff;
+    background: #262626;
+    position: relative;
+    margin: 150px;
+    padding: 30px;
+    border-radius: 20px;
+  }
+
+  #box2::after,
+  #box2::before {
+    content: "";
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    background: linear-gradient(45deg, #fb0094, #0000ff, #00ff00, #ffff00, #ff0000, #fb0094, #0000ff, #00ff00, #ffff00, #ff0000);
+    background-size: 400%;
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    z-index: -1;
+    animation: animated-shadow 10s linear infinite alternate;
+  }
+
+  #box2::after {
+    filter: blur(30px);
+  }
+
+
+  .imggg{
+    width: 400px;
+    height: 250px;
+    margin: 10px;
+  }
+
+  .img1 {
+    margin: 10px;
+  }
+  
+  #box3 {
+    width: 1050px;
+    height: 1220px;
+    color: #fff;
+    background: #262626;
+    position: relative;
+    margin: 150px;
+    padding: 30px;
+    border-radius: 20px;
+  }
+
+  #box3::after,
+  #box3::before {
+    content: "";
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    background: linear-gradient(45deg, #fb0094, #0000ff, #00ff00, #ffff00, #ff0000, #fb0094, #0000ff, #00ff00, #ffff00, #ff0000);
+    background-size: 400%;
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    z-index: -1;
+    animation: animated-shadow 10s linear infinite alternate;
+  }
+
+  #box3::after {
+    filter: blur(30px);
+  }
+
+  .dropdown{
+    display: inline-block;
+}
+.dropdown a{
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+}
+.dropdown .content{
+    display: none;
+    position: absolute;
+    background-image: linear-gradient(to left, rgb(0, 221, 255), rgb(55, 75, 255), blue);
+    min-width: 100px;
+    box-shadow: 5px 5px 5px hsla(0, 0%, 0%, 0.8);
+    border-radius: 10px;
+}
+.dropdown:hover .content{
+    display: block;
+}
+.dropdown:hover button{
+    background-color: hsl(0, 0%, 70%);
+}
+.dropdown a:hover{
+    background-color: hsl(0, 0%, 90%);
+}
+
+.yea {
+  text-decoration: none;
+  color: blue;
+}
+
+.yea:hover {
+  color: white;
+}
